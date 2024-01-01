@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+func showHelp() {
+    fmt.Println("Useless-SH by Moltony");
+    fmt.Println("help - display this message");
+    fmt.Println("quit or exit - quit the shell");
+}
+
 func main() {
     inp := "";
     for {
@@ -10,9 +16,7 @@ func main() {
         if inp == "quit" || inp == "exit" {
             break;
         } else if inp == "help" {
-            fmt.Println("Useless-SH by Moltony");
-            fmt.Println("help - display this message");
-            fmt.Println("quit or exit - quit the shell");
+            showHelp();
         } else {
             fmt.Printf("Useless-SH: %s: command not found\n", inp);
         }
