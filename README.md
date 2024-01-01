@@ -13,3 +13,9 @@ This shell cannot execute any commands or binaries other than those listed.
 ## Why???
 
 idk
+
+## Building
+
+`go build ./main.go`
+
+This will create a `main` or `main.exe`, which is the Useless-SH executable.
